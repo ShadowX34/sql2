@@ -390,4 +390,80 @@ if (isset($_GET['action']) && $_GET['action'] == 'list_teachers_with_students') 
 <!-- 9. Удаление студента -->
 <form action="" method="post">
     <h2>Удалить студента</h2>
-    <label for="student_id">ID Студента:</label
+    <label for="student_id">ID Студента:</label>
+
+    <!-- 10. Обновление имени студента -->
+<form action="" method="post">
+    <h2>Обновить имя студента</h2>
+    <label for="student_id">ID Студента:</label>
+    <input type="number" id="student_id" name="student_id"><br><br>
+    <label for="name">Новое имя:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <input type="submit" name="update_student_name" value="Обновить">
+</form>
+
+<!-- 11. Вывод преподавателей и их курсов -->
+<a href="?action=list_teachers_with_courses">Вывести преподавателей с их курсами</a>
+
+<!-- 12. Поиск студента по имени -->
+<form action="" method="post">
+    <h2>Поиск студента по имени</h2>
+    <label for="name">Имя студента:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <input type="submit" name="search_student" value="Поиск">
+</form>
+
+<!-- 13. Вывод студентов без группы -->
+<a href="?action=list_students_without_group">Вывести студентов без группы</a>
+
+<!-- 14. Добавление нового курса -->
+<form action="" method="post">
+    <h2>Добавить новый курс</h2>
+    <label for="course_name">Название курса:</label>
+    <input type="text" id="course_name" name="course_name"><br><br>
+    <label for="teacher_id">ID Преподавателя:</label>
+    <input type="number" id="teacher_id" name="teacher_id"><br><br>
+    <input type="submit" name="add_course" value="Добавить">
+</form>
+
+<!-- 15. Регистрация нового преподавателя -->
+<form action="" method="post">
+    <h2>Добавить нового преподавателя</h2>
+    <label for="teacher_name">Имя преподавателя:</label>
+    <input type="text" id="teacher_name" name="teacher_name"><br><br>
+    <input type="submit" name="add_teacher" value="Добавить">
+</form>
+
+<!-- 16. Поиск курса по названию -->
+<form action="" method="post">
+    <h2>Поиск курса по названию</h2>
+    <label for="course_name">Название курса:</label>
+    <input type="text" id="course_name" name="course_name"><br><br>
+    <input type="submit" name="search_course" value="Поиск">
+</form>
+
+<!-- 17. Удаление курса -->
+<form action="" method="post">
+    <h2>Удалить курс</h2>
+    <label for="course_id">ID Курса:</label>
+    <input type="number" id="course_id" name="course_id"><br><br>
+    <input type="submit" name="delete_course" value="Удалить">
+</form>
+
+<!-- 18. Фильтрация студентов по группе -->
+<form action="" method="post">
+    <h2>Фильтровать студентов по группе</h2>
+    <label for="group_id">ID Группы:</label>
+    <input type="number" id="group_id" name="group_id"><br><br>
+    <input type="submit" name="filter_students_by_group" value="Фильтровать">
+</form>
+
+<!-- 19. Вывод студентов, зарегистрированных на несколько курсов -->
+<a href="?action=list_students_with_multiple_courses">Вывести студентов, зарегистрированных на несколько курсов</a>
+
+<!-- 20. Вывод преподавателей с количеством их студентов -->
+<a href="?action=list_teachers_with_students">Вывести преподавателей с количеством их студентов</a>
+
+</body>
+</html>
+    
